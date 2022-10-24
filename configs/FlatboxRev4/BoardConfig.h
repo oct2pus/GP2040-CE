@@ -56,11 +56,11 @@
 #define PIN_BUTTON_L3   FLATBOX_SW5_PIN          // L3 / LS / LS / L3 / 11 / LS
 #define PIN_BUTTON_R3   FLATBOX_SW6_PIN          // R3 / RS / RS / R3 / 12 / RS
 #define PIN_BUTTON_A1   FLATBOX_SW3_PIN          // A1 / Guide / Home / ~ / 13 / ~
-#define PIN_BUTTON_A2   FLATBOX_SW4_PIN          // A2 / ~ / Capture / ~ / 14 / ~
-#define PIN_BUTTON_REVERSE -1       // UDLR Reverse
-#define PIN_BUTTON_TURBO -1         // Turbo
-#define PIN_SLIDER_LS    -1         // Left Stick Slider
-#define PIN_SLIDER_RS    -1         // Right Stick Slider
+#define PIN_BUTTON_A2   -1                       // A2 / ~ / Capture / ~ / 14 / ~
+#define PIN_BUTTON_REVERSE -1                    // UDLR Reverse
+#define PIN_BUTTON_TURBO FLATBOX_SW4_PIN         // Turbo
+#define PIN_SLIDER_LS    -1                      // Left Stick Slider
+#define PIN_SLIDER_RS    -1                      // Right Stick Slider
 
 
 // This is the SOCD section.
@@ -70,7 +70,7 @@
 // 2 - `SOCD_MODE_UP_PRIORITY` - This is up priority SOCD.  EG. when you press `up` + `down` `up` will be registered.
 // 3 - `SOCD_MODE_SECOND_INPUT_PRIORITY` - This is last priority SOCD.  EG. when you press and hold `up` then press `down` `down` will be registered.
 
-#define DEFAULT_SOCD_MODE SOCD_MODE_NEUTRAL
+#define DEFAULT_SOCD_MODE SOCD_MODE_UP_PRIORITY
 
 
 // This is the LEDs section.
